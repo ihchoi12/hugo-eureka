@@ -31,7 +31,7 @@
       </div>
     {{ end }}
   </div>
-  <div class="flex md:flex-col justify-center items-end ml-8">
+  <div class="flex md:flex-col justify-center items-center ml-8">
     {{ $brand := $.Param "social"}}
     {{ range $brand }}
       {{/* Deprecation warning(v1.0.0) starts */}}
@@ -40,9 +40,13 @@
       {{ end }}
       {{ $iconPack := .iconPack | default .icon_pack }}
       {{/* Deprecation warning(v1.0.0) ends */}}
-      {{ $src := print $iconPack " fa-" .icon }}
-      <div class="pb-2 pr-4 md:pr-0 pt-4 md:pt-0">
+      <div class="pb-6 pr-6 md:pr-0 pt-6 md:pt-0">
+        {{ if .icon }}
+        {{ $src := print $iconPack " fa-" .icon " fa-2x" }}
         <a href="{{ .url }}"><i class="{{ print $src }}"></i></a>
+        {{ else }}
+        <a href="{{ .url }}"><b>{{ .text }}</b></a>
+        {{ end }}
       </div>
     {{ end }}
   </div>
