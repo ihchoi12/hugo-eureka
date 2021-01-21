@@ -29,4 +29,3 @@ Thumbs.db
 .sass-cache
 public
 # Folders to ignore
-node_modules
