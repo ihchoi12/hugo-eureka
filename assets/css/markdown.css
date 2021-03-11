@@ -103,4 +103,14 @@
   margin-top: -4rem;
 }
 
+.content figure * {
+  margin: auto;
+}
 
+.content figure p:before {
+  content: "Figure: ";
+}
+
+.content figure > figcaption {
+  @apply text-center text-sm text-secondary-text;
+}
