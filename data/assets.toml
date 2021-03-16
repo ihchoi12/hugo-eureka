@@ -12,11 +12,16 @@
 
 # Font Awesome
 [fontawesome]
-  version = "5.14.0"
 
   [fontawesome.js]
+    version = "5.14.0"
     url = "https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@%s/js/all.min.js"
     sri = "sha256-uNYoXefWRqv+PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="
+
+  [academicons.js]
+    version = "1.8.6"
+    url = "https://cdn.jsdelivr.net/gh/jpswalsh/academicons@%s/css/academicons.min.css"
+    sri = "sha512-MCWBwPSput2UWNwyznVFLbD2iUc1e5VsdD1zahsWVzkDSUzyHhMZ4kCS3wgYSRm0mU+glwD/Q9lSJrDPwbUL2A=="
 
 # KaTeX
 [katex]
